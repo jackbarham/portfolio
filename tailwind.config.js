@@ -2,11 +2,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'brand-navy': '#181f49',
+        'jb-primary': '#5122E1',
       },
       fontFamily: {
-        neworder: ['new-order', 'sans-serif'],
-        inter: ['Inter var', 'sans-serif'],
+        transducer: ['transducer', 'system-ui', 'sans-serif'],
+        articulat: ['articulat', 'system-ui', 'sans-serif'],
       },
       typography: {
         DEFAULT: {

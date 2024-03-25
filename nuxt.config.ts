@@ -19,11 +19,7 @@ export default defineNuxtConfig({
       link: [
         { 
           rel: 'stylesheet', 
-          href: 'https://rsms.me/inter/inter.css'
-        },
-        { 
-          rel: 'stylesheet', 
-          href: 'https://use.typekit.net/iiw3pli.css'
+          href: 'https://use.typekit.net/ztp5pvp.css'
         },
         // { 
         //   rel: 'shortcut icon', 
