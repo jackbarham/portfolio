@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --de: #a89bf9;
+}
+
+@layer base {
+  body {
+    @apply font-inter;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-neworder font-medium leading-relaxed;
+  }
+
+  button {
+    @apply w-full;
+  }
+
+  /* WYSIWYG */
+
+  .prose {
+    @apply !max-w-full;
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5 {
+    @apply font-medium;
+  }
+
+  .prose img {
+    @apply w-full rounded-lg;
+  }
+
+  .prose ul {
+    @apply list-outside list-disc marker:text-brand-navy/30;
+  }
+}
+
+@layer components {
+  .layout-p-normal {
+    @apply py-14 lg:py-24;
+  }
+
+  .layout-w-normal {
+    @apply m-auto px-4 md:px-8;
+  }
+}
+
+@layer utilities {
+  .transition-default {
+    @apply transition duration-200 ease-linear;
+  }
+}
+
+/* ICONS */
+
+.nuxt-icon {
+  height: 100% !important;
+  width: 100% !important;
+}
