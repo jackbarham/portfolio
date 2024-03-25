@@ -3,7 +3,7 @@
     <div class="bg-jb-primary">
       <div class="h-20 flex justify-between items-center max-w-7xl layout-w-normal">
         <h1 class="text-3xl text-white">Jack Barham</h1>
-        <ul class="flex space-x-16">
+        <ul class="hidden md:flex space-x-16">
           <li v-for="page in pages" :key="page.url">
             <NuxtLink :to="page.url" class="relative group text-white text-lg font-transducer font-medium tracking-wide">
               <span class="block">{{ page.title }}</span>
