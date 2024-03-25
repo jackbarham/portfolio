@@ -19,7 +19,9 @@ export default defineNuxtConfig({
       link: [
         { 
           rel: 'stylesheet', 
-          href: 'https://use.typekit.net/ztp5pvp.css'
+          href: 'https://use.typekit.net/ztp5pvp.css',
+          as: 'style',
+          onload: 'this.rel="stylesheet"',
         },
         // { 
         //   rel: 'shortcut icon', 
