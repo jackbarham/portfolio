@@ -11,7 +11,7 @@
   src: url('~/assets/fonts/Transducer-Black.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-  /* font-display: swap; */
+  font-display: swap;
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   src: url('~/assets/fonts/Transducer-Bold.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-  /* font-display: swap; */
+  font-display: swap;
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   src: url('~/assets/fonts/Transducer-Medium.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-  /* font-display: swap; */
+  font-display: swap;
 }
 
 @layer base {

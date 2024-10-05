@@ -20,12 +20,6 @@ export default defineNuxtConfig({
         }
       ],
       link: [
-        // { 
-        //   rel: 'stylesheet', 
-        //   href: 'https://use.typekit.net/ztp5pvp.css',
-        //   as: 'style',
-        //   onload: 'this.rel="stylesheet"',
-        // },
         { 
           rel: 'preconnect', 
           href: 'https://fonts.googleapis.com' 
@@ -35,10 +29,18 @@ export default defineNuxtConfig({
           href: 'https://fonts.gstatic.com', 
           crossorigin: 'anonymous'
         },
-        { 
-          rel: 'stylesheet', 
-          href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap' 
+        {
+          rel: 'preload',
+          href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
+          as: 'style',
+          onload: 'this.rel="stylesheet"',
         },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
+          media: 'print',
+          onload: 'this.media="all"'
+        }
         // { 
         //   rel: 'shortcut icon', 
         //   type: 'image/png', 
