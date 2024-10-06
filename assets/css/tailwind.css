@@ -6,37 +6,13 @@
   --primary: #a89bf9;
 }
 
-@font-face {
-  font-family: 'Transducer-Black';
-  src: url('~/assets/fonts/Transducer-Black.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Transducer-Bold';
-  src: url('~/assets/fonts/Transducer-Bold.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Transducer-Medium';
-  src: url('~/assets/fonts/Transducer-Medium.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 @layer base {
   body {
-    @apply font-copy;
+    @apply font-normal text-black;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-black font-semibold;
+    @apply font-transducer font-semibold;
   }
 
   button {
@@ -46,7 +22,7 @@
   /* WYSIWYG */
 
   .prose {
-    @apply !max-w-full !text-gray-950 !font-normal;
+    /* @apply !text-sm; */
   }
 
   .prose h1,

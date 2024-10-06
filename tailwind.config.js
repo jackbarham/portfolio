@@ -5,10 +5,8 @@ module.exports = {
         'brand-primary': '#5122E1',
       },
       fontFamily: {
-        black: ['Transducer-Black', 'system-ui', 'sans-serif'],
-        bold: ['Transducer-Bold', 'system-ui', 'sans-serif'],
-        medium: ['Transducer-Medium', 'system-ui', 'sans-serif'],
-        copy: ['Inter', 'system-ui', 'sans-serif'],
+        transducer: ['transducer', 'system-ui', 'sans-serif'],
+        articulat: ['articulat-cf', 'system-ui', 'sans-serif'],
       },
       typography: {
         DEFAULT: {
