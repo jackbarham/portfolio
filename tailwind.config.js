@@ -6,8 +6,8 @@ module.exports = {
       },
       fontFamily: {
         transducer: ['transducer', 'system-ui', 'sans-serif'],
-        // articulat: ['articulat-cf', 'system-ui', 'sans-serif'],
-        articulat: ['system-ui', 'sans-serif'],
+        articulat: ['articulat-cf', 'system-ui', 'sans-serif'],
+        // articulat: ['system-ui', 'sans-serif'],
       },
       typography: {
         DEFAULT: {

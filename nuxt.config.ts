@@ -38,8 +38,6 @@ export default defineNuxtConfig({
         { 
           rel: 'stylesheet', 
           href: 'https://use.typekit.net/gaa7jmr.css',
-          as: 'style',
-          onload: 'this.rel="stylesheet"',
         },
       ],
     }

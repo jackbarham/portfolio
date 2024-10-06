@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-    @apply font-articulat font-normal text-black;
+    @apply font-articulat text-lg text-black;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -18,7 +18,7 @@
   /* WYSIWYG */
 
   .prose {
-    /* @apply !text-sm; */
+    @apply !text-lg;
   }
 
   .prose h1,
