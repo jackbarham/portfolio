@@ -6,13 +6,6 @@
   --primary: #a89bf9;
 }
 
-/* body {
-  font-family: articulat-cf, system-ui, sans-serif;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: transducer, system-ui, sans-serif;
-} */
-
 @layer base {
   body {
     @apply font-articulat font-normal text-black;
@@ -21,11 +14,7 @@ h1, h2, h3, h4, h5, h6 {
   h1, h2, h3, h4, h5, h6 {
     @apply font-transducer font-semibold;
   }
-
-  button {
-    @apply w-full;
-  }
-
+  
   /* WYSIWYG */
 
   .prose {
