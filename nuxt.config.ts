@@ -10,10 +10,10 @@ export default defineNuxtConfig({
   ],
   // fonts: {
   //   adobe: {
-  //     id: ['ztp5pvp'],
+  //     id: ['gaa7jmr'],
   //   },
   //   families: [
-  //     { name: '"Articulat CF"', provider: 'adobe' },
+  //     // { name: '"Articulat CF"', provider: 'adobe' },
   //     { name: '"Transducer"', provider: 'adobe' },
   //   ],
   // },
