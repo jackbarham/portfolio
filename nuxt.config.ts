@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   ],
   fonts: {
     adobe: {
-      id: ['ztp5pvp'],
+      id: ['xbj4hsc'],
     },
   },
   app: {
