@@ -8,15 +8,6 @@ export default defineNuxtConfig({
     'nuxt-svgo',
     '@nuxt/fonts',
   ],
-  // fonts: {
-  //   adobe: {
-  //     id: ['gaa7jmr'],
-  //   },
-  //   families: [
-  //     { name: '"Articulat CF"', provider: 'adobe' },
-  //     { name: '"FF Meta Serif Pro"', provider: 'adobe' },
-  //   ],
-  // },
   app: {
     head: {
       htmlAttrs: {

@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-    @apply font-articulat font-normal text-black;
+    @apply font-inter font-normal text-black;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -59,4 +59,5 @@
 .nuxt-icon {
   height: 100% !important;
   width: 100% !important;
+  margin: 0 !important;
 }
