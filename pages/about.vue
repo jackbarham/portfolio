@@ -1,9 +1,10 @@
 <template>
   <div class="prose">
     <h1>About</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis ante dapibus, ullamcorper ante sed, suscipit purus. Nam ultrices lacus sit amet erat fermentum dignissim. Cras pharetra velit in aliquam commodo. Nullam lacinia luctus lectus, eget congue erat vehicula eu. Curabitur vulputate nunc quis odio dictum, ac egestas leo varius. Mauris ultricies ac diam semper rutrum. Suspendisse porta ante mi, eu rhoncus orci condimentum sit amet. Phasellus a erat lorem. Sed condimentum sem ligula, vel rhoncus orci tristique ut. Sed faucibus diam lacus, non cursus velit fringilla non. Proin blandit ut velit vitae porttitor. Cras egestas, ex ut porta efficitur, mauris risus ultricies metus, vel sagittis mi nulla ac risus.</p>
-    <p>Proin vel erat et orci laoreet vestibulum ac sit amet ante. Aliquam ut lacinia diam. Cras vitae aliquam erat. Phasellus non malesuada felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin mattis ac odio quis malesuada. Sed varius metus magna, non commodo ante rhoncus in. Pellentesque vestibulum nisi non lorem pretium, ac posuere dolor mollis. Donec porta orci in hendrerit fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at ipsum nulla. Quisque vehicula, justo nec accumsan hendrerit, justo velit elementum odio, pharetra finibus lectus tortor vel mi. Nullam sit amet luctus lectus. Nunc eu ante sem. Vivamus efficitur ultricies tortor in interdum. Quisque cursus purus malesuada mauris cursus, vitae ornare magna ultrices.</p>
-    <p>Nunc bibendum tempus eros, nec porta leo gravida at. Aenean a mi nec metus imperdiet finibus eu et purus. Sed pretium neque a elit laoreet posuere. Nulla facilisi. Aliquam tincidunt aliquet suscipit. Mauris odio diam, commodo vitae orci vel, ullamcorper dignissim turpis. Mauris feugiat et ex at consequat. In in mauris justo. Nam ultricies libero purus, quis lacinia magna pharetra congue.</p>
+    <p>I'm a digital all-rounder and problem solver based in London. I taught myself web design and development in 2007 and never looked back.</p>
+    <p>I work in, but not limited to, front-end and full-stack development. I've built websites and web applications for large and small companies and freelanced for many London agencies and startups.</p>
+    <p>My forte is mobile-first website, web application, and user-interface design and development. I'm primarily a front-end developer with solid UI design and back-end skills.</p>
+    <p>I often work with Sketch, Figma, Photoshop, Javascript (Node, ES6 and Vue.js), PHP (Laravel and WordPress) and I know my way around AWS.</p>
   </div>
 </template>
 

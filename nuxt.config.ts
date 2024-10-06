@@ -13,8 +13,8 @@ export default defineNuxtConfig({
   //     id: ['gaa7jmr'],
   //   },
   //   families: [
-  //     // { name: '"Articulat CF"', provider: 'adobe' },
-  //     { name: '"Transducer"', provider: 'adobe' },
+  //     { name: '"Articulat CF"', provider: 'adobe' },
+  //     { name: '"FF Meta Serif Pro"', provider: 'adobe' },
   //   ],
   // },
   app: {
