@@ -8,11 +8,11 @@
 
 @layer base {
   body {
-    @apply font-articulat font-medium text-black;
+    @apply font-articulat font-normal text-black;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-transducer font-semibold;
+    @apply font-transducer font-black antialiased;
   }
   
   /* WYSIWYG */
