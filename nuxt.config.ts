@@ -23,7 +23,7 @@ export default defineNuxtConfig({
          { 
           rel: 'shortcut icon', 
           type: 'image/png', 
-          href: 'https://a.storyblok.com/f/299693/132x128/cd8ce450b3/favicon.png?v=1'
+          href: 'https://a.storyblok.com/f/299693/130x128/f7e6b5d5e7/favicon.png.png?v=1'
         },
         { 
           rel: 'preload', 
