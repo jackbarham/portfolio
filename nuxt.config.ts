@@ -20,18 +20,47 @@ export default defineNuxtConfig({
         }
       ],
       link: [
+        // Preload the Adobe Typekit CSS to avoid render-blocking
+        { 
+          rel: 'preload', 
+          href: 'https://use.typekit.net/ztp5pvp.css',
+          as: 'style',
+        },
+        // Load the Adobe Typekit CSS asynchronously to avoid render-blocking
         { 
           rel: 'stylesheet', 
           href: 'https://use.typekit.net/ztp5pvp.css',
-          as: 'style',
           onload: 'this.rel="stylesheet"',
+          media: 'print',
         },
+        { 
+          rel: 'preconnect', 
+          href: 'https://use.typekit.net',
+        },
+        { 
+          rel: 'preconnect', 
+          href: 'https://p.typekit.net',
+          crossorigin: 'anonymous',
+        },
+        // Optional: If hosting fonts locally (requires custom setup)
         // { 
-        //   rel: 'shortcut icon', 
-        //   type: 'image/png', 
-        //   href: 'https://a.storyblok.com/f/277323/80x80/5e2a1a8cff/favicon.png'
-        // }
+        //   rel: 'stylesheet', 
+        //   href: '/fonts/custom-font.css',
+        //   onload: 'this.rel="stylesheet"',
+        // },
       ],
+      script: [
+        {
+          src: 'https://use.typekit.net/ztp5pvp.js',
+          async: true,
+          defer: true,
+        },
+        {
+          innerHTML: 'try{Typekit.load({ async: true });}catch(e){}',
+          type: 'text/javascript',
+        },
+      ],
+      // __dangerouslyDisableSanitizers: ['script'],
     }
   }
 })
