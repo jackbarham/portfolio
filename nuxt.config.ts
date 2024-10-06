@@ -20,21 +20,21 @@ export default defineNuxtConfig({
         }
       ],
       link: [
-         { 
+        { 
           rel: 'shortcut icon', 
           type: 'image/png', 
           href: 'https://a.storyblok.com/f/299693/130x128/f7e6b5d5e7/favicon.png?v=1'
         },
+        // Preload the stylesheet first to avoid render-blocking but ensure it applies
         { 
           rel: 'preload', 
           href: 'https://use.typekit.net/ztp5pvp.css',
           as: 'style',
         },
+        // Use the normal stylesheet without media switching to ensure the font loads
         { 
           rel: 'stylesheet', 
           href: 'https://use.typekit.net/ztp5pvp.css',
-          onload: 'this.rel="stylesheet"',
-          media: 'print',
         },
         { 
           rel: 'preconnect', 
