@@ -4,7 +4,7 @@
       <div class="lg:flex justify-between items-center md:flex-row-reverse max-w-7xl layout-w-normal">
         <ul class="flex justify-center lg:justify-normal mr-4 lg:mr-0 mb-16 lg:mb-0">
           <li  v-for="social in socials" :key="social.id" class="ml-4">
-            <NuxtLink :to="social.url" target="_blank" class="block bg-white hover:bg-brand-red p-3 rounded" :aria-label="social.name">
+            <NuxtLink :to="social.url" target="_blank" class="block bg-white hover:bg-brand-red p-3 rounded" :aria-label="`Jack Barham on ${social.name}`">
               <span class="block h-8 w-8">
                 <component :is="icons[social.id]" filled class="text-black" />
               </span>

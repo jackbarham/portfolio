@@ -1,13 +1,19 @@
 module.exports = {
+  content: [
+    './pages/**/*.{html,js,ts}',
+    './components/**/*.{html,js,ts}',
+    './storyblok/**/*.{vue,js,ts}',
+    './storyblok/*.{vue,js,ts}',
+  ],
   theme: {
     extend: {
       colors: {
         'brand-red': '#fb3a58',
       },
-fontFamily: {
-  transducer: ['Transducer', 'system-ui', 'sans-serif'],
-  articulat: ['"Articulat CF"', 'system-ui', 'sans-serif'],
-},
+      fontFamily: {
+        transducer: ['Transducer', 'system-ui', 'sans-serif'],
+        articulat: ['"Articulat CF"', 'system-ui', 'sans-serif'],
+      },
       typography: {
         DEFAULT: {
           css: {

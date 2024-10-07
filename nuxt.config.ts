@@ -7,16 +7,28 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-svgo',
     '@nuxt/fonts',
+    '@nuxt/image',
+    ['@storyblok/nuxt', {
+      accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
+    }],
   ],
-fonts: {
-  adobe: {
-    id: ['ztp5pvp'],
+  fonts: {
+    adobe: {
+      id: ['ztp5pvp'],
+    },
+    families: [
+      { name: 'Transducer', weights: [400, 500, 900], styles: ['normal'] },
+      { name: '"Articulat CF"', weights: [400, 800], styles: ['normal', 'italic'] },
+    ],
   },
-  families: [
-    { name: 'Transducer', weights: [400, 500, 900], styles: ['normal'] },
-    { name: '"Articulat CF"', weights: [400, 800], styles: ['normal', 'italic'] },
-  ],
-},
+  image: {
+    quality: 85,
+    format: ['webp'],
+    provider: 'storyblok',
+    storyblok: {
+      baseURL: 'https://a.storyblok.com'
+    }
+  },
   app: {
     head: {
       htmlAttrs: {
@@ -26,7 +38,7 @@ fonts: {
       meta: [
         { 
           name: 'description', 
-          content: 'Web development, interface design and digital consultancy.' 
+          content: 'Web development, interface design and digital consultancy.'
         }
       ],
       link: [

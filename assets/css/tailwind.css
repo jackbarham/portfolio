@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --primary: #a89bf9;
+  --brand-red: #fb3a58;
 }
 
 @layer base {
@@ -30,7 +30,7 @@
   .prose h3,
   .prose h4,
   .prose h5 {
-    /* @apply font-medium; */
+    
   }
 
   .prose img {
