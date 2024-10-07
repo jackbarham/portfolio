@@ -8,6 +8,15 @@ export default defineNuxtConfig({
     'nuxt-svgo',
     '@nuxt/fonts',
   ],
+  fonts: {
+    adobe: {
+      id: ['ztp5pvp'],
+    },
+    families: [
+      { name: '"Articulat CF"' },
+      { name: '"Transducer"', weights: [400, 500, 600, 900] },
+    ],
+  },
   app: {
     head: {
       htmlAttrs: {
@@ -26,10 +35,10 @@ export default defineNuxtConfig({
           type: 'image/png', 
           href: 'https://a.storyblok.com/f/299693/130x128/f7e6b5d5e7/favicon.png?v=1'
         },
-        { 
-          rel: 'stylesheet', 
-          href: 'https://use.typekit.net/gaa7jmr.css',
-        },
+        // { 
+        //   rel: 'stylesheet', 
+        //   href: 'https://use.typekit.net/gaa7jmr.css',
+        // },
       ],
     }
   }

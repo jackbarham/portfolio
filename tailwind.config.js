@@ -5,8 +5,10 @@ module.exports = {
         'brand-primary': '#5122E1',
       },
       fontFamily: {
-        transducer: ['transducer', 'system-ui', 'sans-serif'],
-        inter: ['inter-variable', 'system-ui', 'sans-serif'],
+        // transducer: ['transducer', 'system-ui', 'sans-serif'],
+        // inter: ['inter-variable', 'system-ui', 'sans-serif'],
+        transducer: ['"Transducer"', 'system-ui', 'sans-serif'],
+        inter: ['"Articulat CF"', 'system-ui', 'sans-serif'],
       },
       typography: {
         DEFAULT: {
