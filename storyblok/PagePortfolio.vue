@@ -1,9 +1,12 @@
 <template>
-  <div v-editable="blok">
-    <div class="layout-block">
-      <article class="max-w-[768px] mx-auto py-16 md:py-28">
+  <div v-editable="blok" class="page-portfolio">
+    <div class="layout-wide">
+      <div class="container">
+        <HeadingLarge />
+      <article class="py-16 md:py-28">
         <p>Portfolio</p>
       </article>
+      </div>
     </div>
   </div>
 </template>
