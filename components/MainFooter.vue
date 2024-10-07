@@ -1,10 +1,10 @@
 <template>
   <footer class="footer">
-    <div class="bg-gray-950 py-20">
+    <div class="bg-gray-950 py-16 md:py-20">
       <div class="lg:flex justify-between items-center md:flex-row-reverse max-w-7xl layout-w-normal">
-        <ul class="flex justify-center lg:justify-normal mr-4 lg:mr-0 mb-8 lg:mb-0">
+        <ul class="flex justify-center lg:justify-normal mr-4 lg:mr-0 mb-16 lg:mb-0">
           <li  v-for="social in socials" :key="social.id" class="ml-4">
-            <NuxtLink :to="social.url" target="_blank" class="block bg-white p-3 rounded" :aria-label="social.name">
+            <NuxtLink :to="social.url" target="_blank" class="block bg-white hover:bg-brand-red p-3 rounded" :aria-label="social.name">
               <span class="block h-8 w-8">
                 <component :is="icons[social.id]" filled class="text-black" />
               </span>
@@ -13,7 +13,7 @@
         </ul>
         <div class="text-gray-100 text-center lg:text-left">
           <h1 class="text-xl mb-1">Jack Barham</h1>
-          <p class="text-sm mb-6">Web development, interface design and consultancy.</p>
+          <p class="text-sm mb-6 max-w-56 md:max-w-full mx-auto">Web development, interface design and consultancy.</p>
           <p class="text-xs text-gray-400">Copyright &copy; 2010 - {{ year }} Airbox Media Ltd</p>
         </div>
       </div>

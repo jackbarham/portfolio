@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     },
     families: [
       { name: '"Articulat CF"' },
-      { name: '"Transducer"', weights: [400, 500, 600, 900] },
+      { name: 'Transducer', weights: [400, 500, 600, 900] },
     ],
   },
   app: {
@@ -37,7 +37,7 @@ export default defineNuxtConfig({
         },
         // { 
         //   rel: 'stylesheet', 
-        //   href: 'https://use.typekit.net/gaa7jmr.css',
+        //   href: 'https://use.typekit.net/ztp5pvp.css',
         // },
       ],
     }

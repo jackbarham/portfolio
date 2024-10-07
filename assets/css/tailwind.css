@@ -8,17 +8,21 @@
 
 @layer base {
   body {
-    @apply font-inter font-normal text-black;
+    @apply font-articulat font-normal tracking-wide text-black;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-transducer font-black antialiased;
+    @apply font-transducer font-black tracking-normal antialiased;
+  }
+
+  a {
+    @apply transition-colors duration-200 ease-in-out;
   }
   
   /* WYSIWYG */
 
-  .prose {
-    /* @apply !text-[19px]; */
+  .prose p {
+    @apply text-base md:text-[17px] tracking-wide leading-normal md:leading-relaxed text-gray-900;
   }
 
   .prose h1,
@@ -44,7 +48,7 @@
   }
 
   .layout-w-normal {
-    @apply m-auto px-4 md:px-8;
+    @apply m-auto px-4 md:px-8 lg:px-12;
   }
 }
 

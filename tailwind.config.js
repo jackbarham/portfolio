@@ -2,13 +2,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'brand-primary': '#5122E1',
+        'brand-red': '#fb3a58',
       },
       fontFamily: {
-        // transducer: ['transducer', 'system-ui', 'sans-serif'],
-        // inter: ['inter-variable', 'system-ui', 'sans-serif'],
-        transducer: ['"Transducer"', 'system-ui', 'sans-serif'],
-        inter: ['"Articulat CF"', 'system-ui', 'sans-serif'],
+        transducer: ['Transducer', 'system-ui', 'sans-serif'],
+        articulat: ['"Articulat CF"', 'system-ui', 'sans-serif'],
       },
       typography: {
         DEFAULT: {
