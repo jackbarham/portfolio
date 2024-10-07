@@ -43,12 +43,12 @@
 }
 
 @layer components {
-  .layout-p-normal {
-    @apply py-14 lg:py-24;
+  .layout-full {
+    @apply px-4 md:px-8 lg:px-12 xl:px-20;
   }
 
-  .layout-w-normal {
-    @apply m-auto px-4 md:px-8 lg:px-12;
+  .layout-wide {
+    @apply max-w-7xl m-auto px-4 md:px-8 lg:px-12;
   }
 }
 
