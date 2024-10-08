@@ -25,6 +25,10 @@
     @apply text-base md:text-[17px] tracking-wide leading-normal text-gray-900;
   }
 
+  .prose a {
+    @apply font-normal text-brand-red border-b-2 border-transparent hover:border-brand-red/70 no-underline;
+  }
+
   .prose h1,
   .prose h2,
   .prose h3,

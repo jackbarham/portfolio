@@ -4,8 +4,6 @@
       <HeadingLarge :heading="blok.heading" :intro="blok.intro" />
       <div class="py-8 md:py-28">
         <div class="grid grid-cols-1 lg:grid-cols-[2fr,1fr] gap-12">
-          
-          <!-- Allow the left column to scroll naturally -->
           <div class="w-full">
             <div v-for="(item, index) in blok.gallery" :key="item._uid" class="mb-4 p-4 pb-0 sm:p-8 sm:pb-0 lg:mb-8 rounded-lg bg-brand-yellow">
               <NuxtImg
@@ -20,27 +18,27 @@
               />
             </div>
           </div>
-
-          <!-- Fix the right column to top while left column scrolls -->
-          <div class="w-full h-full relative lg:w-[380px]">
-            <div class="sticky top-8">
-              <div class="mb-12">
-                <h2 class="text-2xl lg:text-3xl mb-4">Client</h2>
-                <div class="prose" v-html="renderRichText(blok.client)"></div>
-              </div>
-              <div class="">
-                <h2 class="text-2xl lg:text-3xl mb-4">Scope</h2>
-                <div class="prose" v-html="renderRichText(blok.scope)"></div>
-              </div>
+          <div class="w-full lg:w-[380px]">
+            <div class="mb-12">
+              <h2 class="text-2xl lg:text-3xl mb-4">Client</h2>
+              <div class="prose" v-html="renderRichText(blok.client)"></div>
+            </div>
+            <div class="mb-12">
+              <h2 class="text-2xl lg:text-3xl mb-4">Scope</h2>
+              <div class="prose mb-8" v-html="renderRichText(blok.scope)"></div>
+              <ul>
+                <li class="mb-1"><strong>Stack:</strong> {{ blok.technology }}</li>
+                <li class="mb-1"><strong>Role:</strong> {{ blok.role }}</li>
+                <li><strong>Published:</strong> {{ blok.published }}</li>
+              </ul>
             </div>
           </div>
-
         </div>
       </div>
     </article>
   </div>
 </template>
-
+ 
 <script setup>
 defineProps({ blok: Object })
 

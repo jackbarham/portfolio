@@ -12,7 +12,9 @@
           </li>
         </ul>
         <div class="text-gray-100 text-center lg:text-left">
-          <h1 class="text-xl mb-1">Jack Barham</h1>
+          <h1 class="text-xl mb-1">
+            <NuxtLink to="/" class="hover:text-brand-red">Jack Barham</NuxtLink>
+          </h1>
           <p class="text-sm mb-6 max-w-56 md:max-w-full mx-auto">Web development, interface design and consultancy.</p>
           <p class="text-xs text-gray-400">Copyright &copy; 2010 - {{ year }} Airbox Media Ltd</p>
         </div>

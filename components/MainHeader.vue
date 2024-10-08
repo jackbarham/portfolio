@@ -1,7 +1,9 @@
 <template>
   <header class="header">
     <div class="md:h-20 md:flex justify-between items-center pt-8 md:pt-0 layout-full">
-      <h1 class="text-3xl text-center md:text-left mb-4 md:mb-0">Jack Barham</h1>
+      <h1 class="text-3xl text-center md:text-left mb-4 md:mb-0">
+        <NuxtLink to="/">Jack Barham</NuxtLink>
+      </h1>
       <ul class="flex justify-center md:justify-normal md:space-x-16 lg:space-x-20">
         <li v-for="page in pages" :key="page.url" class="px-6 md:px-0">
           <NuxtLink :to="page.url" class="relative group font-transducer font-medium tracking-wide">
