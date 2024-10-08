@@ -22,7 +22,7 @@
   /* WYSIWYG */
 
   .prose p {
-    @apply text-base md:text-[17px] tracking-wide leading-normal md:leading-relaxed text-gray-900;
+    @apply text-base md:text-[17px] tracking-wide leading-normal text-gray-900;
   }
 
   .prose h1,

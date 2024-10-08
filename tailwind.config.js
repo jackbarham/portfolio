@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         'brand-red': '#fb3a58',
+        'brand-yellow': '#ffe267',
       },
       fontFamily: {
         transducer: ['Transducer', 'system-ui', 'sans-serif'],
