@@ -8,6 +8,8 @@
             <div v-for="(item, index) in blok.gallery" :key="item._uid" class="mb-4 p-4 pb-0 sm:p-8 sm:pb-0 lg:mb-8 rounded-lg bg-brand-yellow">
               <NuxtImg
                 :loading="index === 0 ? 'eager' : 'lazy'"
+                :width="getWidth(item.image.filename)"
+                :height="getHeight(item.image.filename)"
                 sizes="400 sm:600 md:900 lg:650"
                 format="webp"
                 class="mx-auto rounded rounded-b-none"
@@ -34,4 +36,16 @@
  
 <script setup>
 defineProps({ blok: Object })
+
+// Helper function to extract the width from the filename
+const getWidth = (filename) => {
+  const match = filename.match(/\/(\d+)x(\d+)\//)
+  return match ? parseInt(match[1], 10) : null // Return width
+}
+
+// Helper function to extract the height from the filename
+const getHeight = (filename) => {
+  const match = filename.match(/\/(\d+)x(\d+)\//)
+  return match ? parseInt(match[2], 10) : null // Return height
+}
 </script>
