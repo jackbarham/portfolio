@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --breakpoint-xs: 430px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  
+  --color-brand-red: #fb3a58;
+  --color-brand-yellow: #ffe267;
+  
+  --font-family-heading: Transducer, system-ui, sans-serif;
+  --font-family-body: "Articulat CF", system-ui, sans-serif;
+}
+
+@layer base {
+  html, body {
+    font-family: theme(--font-family-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: theme(--font-family-body);
+    font-weight: 700;
+  }
+
+  button {
+    @apply hover:cursor-pointer;
+  }
+}
+
+@layer components {
+  .layout-full {
+    @apply px-4 sm:px-8 lg:px-12 xl:px-20;
+  }
+
+  .layout-wide {
+    @apply max-w-7xl w-full m-auto px-4 sm:px-8 lg:px-12 xl:px-20;
+  }
+
+  .prose {
+    @apply max-w-none!;
+  }
+  
+  .prose blockquote p:first-of-type::before,
+  .prose blockquote p:first-of-type::after {
+    content: none;
+  }
+}
+
+@layer utilities {
+  .odd\:order-1:nth-child(odd) {
+    order: 1;
+  }
+  
+  .even\:order-2:nth-child(even) {
+    order: 2;
+  }
+  
+  .last\:mb-0:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nuxt-icon {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
