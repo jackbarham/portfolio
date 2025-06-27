@@ -9,7 +9,7 @@
       <div class="h-16 md:h-20 flex justify-between items-center layout-full">
         
         <!-- Title -->
-        <h1 class="text-2xl md:text-3xl text-white mb-1">
+        <h1 class="text-2xl md:text-3xl font-heading text-white mb-1">
           <NuxtLink to="/" @click="closeMobileMenu()">{{ appTitle }}</NuxtLink>
         </h1>
         

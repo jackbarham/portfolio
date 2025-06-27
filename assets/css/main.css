@@ -13,7 +13,7 @@
   --color-brand-yellow: #ffe267;
   --color-brand-purple: #5122E1;
   
-  --font-family-heading: Transducer, system-ui, sans-serif;
+  --font-family-heading: "Transducer Variable", system-ui, sans-serif;
   --font-family-body: "Articulat CF", system-ui, sans-serif;
 }
 
@@ -24,12 +24,12 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: theme(--font-family-heading);
-    @apply font-extrabold antialiased;
+    @apply antialiased;
   }
 
   .font-heading {
     font-family: theme(--font-family-heading);
-    @apply antialiased;
+    @apply font-extrabold antialiased;
   }
 
   button {

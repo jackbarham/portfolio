@@ -31,10 +31,10 @@ export default defineNuxtConfig({
   },
   fonts: {
     adobe: {
-      id: ['ztp5pvp'],
+      id: ['wby8sop'],
     },
     families: [
-      { name: 'Transducer', weights: [400, 500, 900], styles: ['normal'] },
+      { name: '"Transducer Variable"', weights: [400, 500, 700, 900], styles: ['normal'] },
       { name: '"Articulat CF"', weights: [400, 800], styles: ['normal', 'italic'] },
     ],
   },

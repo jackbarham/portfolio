@@ -12,11 +12,11 @@
           </li>
         </ul>
         <div class="text-gray-100 text-center lg:text-left">
-          <h1 class="text-2xl mb-1">
+          <h1 class="text-2xl font-heading mb-1">
             <NuxtLink to="/" class="hover:text-brand-red">{{ appTitle }}</NuxtLink>
           </h1>
-          <p class="text-sm font-light mb-6 max-w-56 md:max-w-full mx-auto">Web development, interface design and digital consultancy.</p>
-          <p class="text-xs text-gray-400">Copyright &copy; 2010 - {{ year }} Airbox Media Ltd</p>
+          <p class="text-sm font-light mb-6 max-w-56 md:max-w-full mx-auto tracking-wide">Web development, interface design and digital consultancy.</p>
+          <p class="text-xs text-gray-400 tracking-wide">Copyright &copy; 2010 - {{ year }} Airbox Media Ltd</p>
         </div>
       </div>
     </div>
