@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/fonts', 
     '@nuxt/image',
+    'nuxt-svgo',
     ['@storyblok/nuxt', {
       accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
       apiOptions: {
