@@ -8,8 +8,16 @@ export default defineNuxtConfig({
     '@nuxt/image',
     ['@storyblok/nuxt', {
       accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
+      apiOptions: {
+        region: 'eu',
+      },
     }]
   ],
+  runtimeConfig: {
+    public: {
+      appTitle: 'Jack Barham'
+    }
+  },
   fonts: {
     adobe: {
       id: ['ztp5pvp'],
