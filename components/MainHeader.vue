@@ -30,13 +30,13 @@
         <!-- Toggle Menu Button -->
         <div 
           @click="toggleMobileMenu()"
-          class="relative z-50 visible md:hidden w-10 h-10 cursor-pointer bg-lime-300"
+          class="relative z-50 visible md:hidden w-8 h-8 cursor-pointer"
           aria-label="Toggle mobile menu"
           :aria-expanded="isMobileMenuOpen"
           :aria-controls="isMobileMenuOpen ? 'mobile-navigation' : undefined"
         >
-          <!-- <svgo-youtube /> -->
-          <!-- <svgo-close v-else filled class="text-white" /> -->
+          <svgo-burger v-if="!isMobileMenuOpen" filled class="text-white" />
+          <svgo-close v-else filled class="text-white" />
         </div>
         
       </div>
