@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=1 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -12,7 +12,9 @@
   "dependencies": {
     "@nuxt/fonts": "^0.11.4",
     "@nuxt/image": "^1.10.0",
+    "@storyblok/nuxt": "^7.1.1",
     "nuxt": "^3.17.5",
+    "nuxt-svgo": "^4.2.2",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   }
