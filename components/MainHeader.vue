@@ -9,7 +9,7 @@
       <div class="h-16 md:h-20 flex justify-between items-center layout-full">
         
         <!-- Title -->
-        <h1 class="text-2xl md:text-3xl font-heading text-white mb-1">
+        <h1 class="text-2xl md:text-3xl font-heading text-white mb-0.5 md:mb-1">
           <NuxtLink to="/" @click="closeMobileMenu()">{{ appTitle }}</NuxtLink>
         </h1>
         
@@ -32,10 +32,10 @@
           @click="toggleMobileMenu()"
           class="relative z-50 visible md:hidden w-8 h-8 cursor-pointer"
           aria-label="Toggle mobile menu"
-          :aria-expanded="isMobileMenuOpen"
-          :aria-controls="isMobileMenuOpen ? 'mobile-navigation' : undefined"
+          :aria-expanded="menuOpen"
+          :aria-controls="menuOpen ? 'mobile-navigation' : undefined"
         >
-          <svgo-burger v-if="!isMobileMenuOpen" filled class="text-white" />
+          <svgo-burger v-if="!menuOpen" filled class="text-white" />
           <svgo-close v-else filled class="text-white" />
         </div>
         
@@ -45,18 +45,18 @@
     <!-- Mobile Navigation -->
     <nav 
       aria-label="Mobile navigation"
-      :id="isMobileMenuOpen ? 'mobile-navigation' : undefined"
-      class="absolute -z-10 left-0 w-full bg-brand-purple p-12 transform transition-transform ease-in duration-200"
-      :class="isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'"
+      :id="menuOpen ? 'mobile-navigation' : undefined"
+      class="absolute -z-10 left-0 w-full bg-brand-purple p-12 transform transition-transform ease-in-out duration-200"
+      :class="menuOpen ? 'translate-y-0' : '-translate-y-full'"
       :style="{ top: '64px', height: 'calc(100dvh - 64px)' }"
     >
       <ul class="space-y-4">
         <li 
           v-for="(page, index) in pages" 
           :key="page.url"
-          class="transform transition-all duration-300 ease-in-out"
-          :class="isMobileMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-4 opacity-0'"
-          :style="{ transitionDelay: isMobileMenuOpen ? `${index * 200}ms` : '0ms' }"
+          class="transform transition-all ease-in-out duration-300"
+          :class="menuOpen ? 'translate-x-0 opacity-100' : 'translate-x-4 opacity-0'"
+          :style="{ transitionDelay: menuOpen ? `${200 + (index * 150)}ms` : '0ms' }"
         >
           <NuxtLink 
             :to="page.url" 
@@ -73,14 +73,6 @@
 
 <script setup>
 const appTitle = useRuntimeConfig().public.appTitle
-
-// Mobile menu state
-const isMobileMenuOpen = ref(false)
-
-// Header visibility state
-const headerVisible = ref(true)
-const lastScrollY = ref(0)
-const scrollDirection = ref('up')
 
 const pages = [
   {
@@ -101,21 +93,29 @@ const pages = [
   }
 ]
 
+// Mobile menu state
+const menuOpen = ref(false)
+
+// Header visibility state
+const headerVisible = ref(true)
+const lastScrollY = ref(0)
+const scrollDirection = ref('up')
+
 // Mobile menu functions
 const toggleMobileMenu = () => {
-  isMobileMenuOpen.value = !isMobileMenuOpen.value
+  menuOpen.value = !menuOpen.value
   updateBodyClass()
 }
 
 const closeMobileMenu = () => {
-  isMobileMenuOpen.value = false
+  menuOpen.value = false
   updateBodyClass()
 }
 
 // Lock/unlock body scroll
 const updateBodyClass = () => {
   if (import.meta.client) {
-    if (isMobileMenuOpen.value) {
+    if (menuOpen.value) {
       document.body.classList.add('overflow-hidden')
     } else {
       document.body.classList.remove('overflow-hidden')
@@ -167,7 +167,7 @@ const handleScroll = () => {
 
 // Handle window resize to close mobile menu
 const handleResize = () => {
-  if (isMobileMenuOpen.value) {
+  if (menuOpen.value) {
     closeMobileMenu()
   }
 }
