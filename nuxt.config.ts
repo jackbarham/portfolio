@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     },
     families: [
       { name: '"Transducer Variable"', weights: [400, 500, 700, 900], styles: ['normal'] },
-      { name: '"Articulat CF"', weights: [400, 800], styles: ['normal', 'italic'] },
+      // { name: '"Articulat CF"', weights: [400, 800], styles: ['normal', 'italic'] },
     ],
   },
   image: {

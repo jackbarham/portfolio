@@ -14,7 +14,7 @@
   --color-brand-purple: #5122E1;
   
   --font-family-heading: "Transducer Variable", system-ui, sans-serif;
-  --font-family-body: "Articulat CF", system-ui, sans-serif;
+  --font-family-body: system-ui, sans-serif;
 }
 
 @layer base {
@@ -47,12 +47,16 @@
   }
 
   .prose {
-    @apply max-w-none;
+    @apply max-w-none !text-[17px]/7 !text-black;
   }
   
   .prose blockquote p:first-of-type::before,
   .prose blockquote p:first-of-type::after {
     content: none;
+  }
+
+  .prose-article {
+    @apply mx-auto !max-w-[720px];
   }
 }
 
