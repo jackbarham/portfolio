@@ -6,7 +6,7 @@
     
     <!-- Main Header -->
     <div class="bg-brand-purple relative z-50">
-      <div class="h-16 md:h-20 flex justify-between items-center layout-full">
+      <div class="h-16 md:h-18 flex justify-between items-center layout-full">
         
         <!-- Title -->
         <h1 class="text-2xl md:text-3xl font-heading text-white mb-0.5 md:mb-1">
