@@ -28,11 +28,7 @@
         </nav>
         
         <!-- Toggle Menu Button -->
-        <div 
-          @click="toggleMobileMenu()"
-          class="relative z-50 visible md:hidden w-8 h-8 cursor-pointer"
-          aria-label="Toggle mobile menu"
-        >
+        <div @click="toggleMobileMenu()" class="relative z-50 visible md:hidden w-8 h-8 cursor-pointer">
           <svgo-burger v-if="!menuOpen" filled class="text-white" />
           <svgo-close v-else filled class="text-white" />
         </div>
