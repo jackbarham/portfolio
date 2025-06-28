@@ -13,7 +13,7 @@
                   :height="imageHeight(item.image.filename)"
                   :src="item.image.filename"
                   :alt="item.image.alt"
-                  sizes="400 sm:600 md:900 lg:650"
+                  sizes="360 sm:600 md:800 lg:650"
                   format="webp"
                   class="mx-auto rounded rounded-b-none"
                 />
