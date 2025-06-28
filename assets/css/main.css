@@ -49,6 +49,10 @@
   .prose {
     @apply max-w-none !text-[17px]/7 !text-black;
   }
+
+  .prose a {
+    @apply !font-normal !text-brand-red border-b border-transparent hover:border-brand-red/80 !no-underline;
+  }
   
   .prose blockquote p:first-of-type::before,
   .prose blockquote p:first-of-type::after {
