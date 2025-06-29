@@ -20,16 +20,17 @@
 @layer base {
   html, body {
     font-family: theme(--font-family-body);
+    @apply antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: theme(--font-family-heading);
-    @apply font-extrabold antialiased;
+    @apply font-extrabold;
   }
 
   .font-heading {
     font-family: theme(--font-family-heading);
-    @apply font-extrabold antialiased;
+    @apply font-extrabold;
   }
 
   button {
@@ -47,7 +48,7 @@
   }
 
   .prose {
-    @apply max-w-none !text-[17px]/7 !text-black;
+    @apply max-w-none !text-[17px]/6.5 !text-black;
   }
 
   .prose a {
