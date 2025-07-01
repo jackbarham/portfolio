@@ -15,8 +15,8 @@
           <h1 class="text-3xl lg:text-2xl text-gray-100 font-heading mb-1">
             <NuxtLink to="/" class="hover:text-brand-red">{{ appTitle }}</NuxtLink>
           </h1>
-          <p class="text-sm text-gray-200 mb-12 lg:mb-6 max-w-50 lg:max-w-full mx-auto">Web development, interface design and digital consultancy.</p>
-          <p class="text-xs text-gray-400">Copyright &copy; 2010 - {{ year }} Airbox Media Ltd</p>
+          <p class="text-gray-200 mb-12 lg:mb-6 max-w-60 lg:max-w-full mx-auto">Web development, interface design and digital consultancy.</p>
+          <p class="text-sm text-gray-400">Copyright &copy; 2010 - {{ year }} Airbox Media Ltd</p>
         </div>
       </div>
     </div>
