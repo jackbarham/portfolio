@@ -32,22 +32,22 @@ const socials = [
   {
     id: 'x',
     name: 'X / Twitter',
-    url: 'https://x.com',
+    url: 'https://x.com/JackBarham',
   },
   {
     id: 'youtube',
     name: 'YouTube',
-    url: 'https://www.youtube.com',
+    url: 'https://www.youtube.com/@jackbarham',
   },
   {
     id: 'linkedin',
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com',
+    url: 'https://www.linkedin.com/in/jack-barham-ba526513',
   },
   {
     id: 'producthunt',
     name: 'Product Hunt',
-    url: 'https://www.producthunt.com',
+    url: 'https://www.producthunt.com/@jackbarham',
   }
 ]
 
