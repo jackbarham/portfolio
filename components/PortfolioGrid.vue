@@ -11,7 +11,7 @@
                 :alt="post.content.heading"
                 sizes="360 sm:600 md:570"
                 format="webp"
-                class="w-full h-full object-cover rounded bg-gray-100 opacity-100 group-hover:opacity-80 transition-opacity duration-200"
+                class="w-full h-full object-cover rounded-md bg-gray-100 opacity-100 group-hover:opacity-80 transition-opacity duration-200"
               />
             </div>
             <h2 class="text-2xl/9 md:text-xl/7 group-hover:text-brand-red duration-200">{{ post.content.heading }}</h2>

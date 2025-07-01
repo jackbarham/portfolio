@@ -11,7 +11,7 @@
             class="flex items-center justify-center transition-opacity duration-200 hover:opacity-75"
           >
             <span :class="brandSizes[brand.id]" class="block opacity-95">
-              <component :is="icons[brand.id]" filled class="text-black w-full h-full" />
+              <component :is="icons[brand.id]" filled class="text-brand-red" />
             </span>
           </NuxtLink>
         </div>
