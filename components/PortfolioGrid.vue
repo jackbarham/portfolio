@@ -1,9 +1,9 @@
 <template>
   <section class="portfolio-grid">
     <div class="max-w-lg md:max-w-full mx-auto">
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div class="grid grid-cols-1 gap-x-6 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
         <div v-for="(post, index) in posts" :key="post.uuid">
-          <NuxtLink :to="post.full_slug" class="block mb-4 group">
+          <NuxtLink :to="post.full_slug" class="block group">
             <div class="relative aspect-3/2 mb-2">
               <NuxtImg
                 :loading="index === 0 ? 'eager' : 'lazy'"
