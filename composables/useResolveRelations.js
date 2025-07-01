@@ -14,11 +14,11 @@ export function useResolveRelations(storyblokUuids, resolveRelations) {
         // Fix path for home route
         const path = route.path === '/' ? '/home' : route.path
 
+        // Fetch relations from Storyblok
         const { data } = await storyblokApi.get(`cdn/stories${path}`, {
           version: 'published',
           resolve_relations: [resolveRelations],
         })
-        
         return data.rels || []
       } catch (err) {
         console.error('Error resolving relations:', err)
@@ -28,7 +28,7 @@ export function useResolveRelations(storyblokUuids, resolveRelations) {
     {
       default: () => [],
       server: true, // Fetch on server-side
-      lazy: true    // Don't block navigation
+      lazy: true // Don't block navigation
     }
   )
 
