@@ -1,6 +1,6 @@
 <template>
   <section v-editable="blok" class="brands">
-    <div class="py-20 md:py-28 lg:py-40">
+    <div class="py-20 md:py-28 lg:py-36">
       <HeadingMini :text="blok.heading" />
       <div class="max-w-xs sm:max-w-2xl lg:max-w-6xl layout-full mx-auto">
         <div class="grid grid-cols-3 lg:grid-cols-6 gap-10 md:gap-12 lg:gap-0 items-center justify-center">
