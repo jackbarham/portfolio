@@ -12,6 +12,7 @@
   --color-brand-red: #f9294a;
   --color-brand-yellow: #ffe267;
   --color-brand-purple: #5122e1;
+  --color-brand-grey-light: #f7f7f7;
   
   --font-family-heading: "Transducer Variable", system-ui, sans-serif;
   --font-family-body: system-ui, sans-serif;
@@ -54,6 +55,10 @@
   .prose a {
     @apply !font-normal !text-brand-red border-b-2 border-transparent transition-colors hover:border-brand-red/75 !no-underline;
   }
+
+  .prose p {
+    /* @apply !font-medium; */
+  }
   
   .prose blockquote p:first-of-type::before,
   .prose blockquote p:first-of-type::after {
@@ -77,6 +82,10 @@
   .last\:mb-0:last-child {
     margin-bottom: 0;
   }
+
+  /* .transition-default {
+    @apply transition duration-200 ease-linear;
+  } */
 }
 
 .nuxt-icon {
