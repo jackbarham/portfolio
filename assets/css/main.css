@@ -31,7 +31,7 @@
 
   .font-heading {
     font-family: theme(--font-family-heading);
-    @apply font-extrabold;
+    @apply font-bold;
   }
 
   button {
