@@ -1,9 +1,9 @@
 <template>
   <section v-editable="blok" class="agencies">
-    <div class="py-20 md:py-28 lg:py-36">
+    <div class="py-18 md:py-22 lg:py-36">
       <HeadingMini :text="blok.heading" />
-      <div class="max-w-xs sm:max-w-xl md:max-w-md lg:max-w-7xl layout-full mx-auto">
-        <div class="grid grid-cols-2 lg:grid-cols-6 gap-x-14 gap-y-12 sm:gap-12 md:gap-14 lg:gap-0 items-center justify-center">
+      <div class="max-w-xs sm:max-w-md lg:max-w-7xl layout-full mx-auto">
+        <div class="grid grid-cols-2 lg:grid-cols-6 gap-x-14 gap-y-12 sm:gap-12 md:gap-16 lg:gap-4 items-center justify-center">
           <a
             v-for="brand in brands"
             :key="brand.id"
