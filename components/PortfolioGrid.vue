@@ -22,13 +22,10 @@
 </template>
 
 <script setup>
-const posts = ref(null)
-
-const storyblokApi = useStoryblokApi()
-const { data } = await storyblokApi.get('cdn/stories', {
-  starts_with: 'portfolio',
-  is_startpage: false,
-  sort_by: 'first_published_at:desc'
+defineProps({
+  posts: {
+    type: Object,
+    required: true,
+  },
 })
-posts.value = data.stories
 </script>
