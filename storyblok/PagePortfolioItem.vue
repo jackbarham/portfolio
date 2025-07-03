@@ -4,7 +4,7 @@
       <div class="max-w-2xl lg:max-w-full mx-auto">
         <HeadingLarge :heading="blok.heading" :intro="blok.intro" />
         <div class="pb-8 md:pb-28">
-          <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 lg:gap-14">
+          <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 lg:gap-10 xl:gap-14">
             <div class="w-full">
               <div v-for="(item, index) in blok.gallery" :key="item._uid" class="mb-4 p-4 pb-0 sm:p-8 sm:pb-0 lg:mb-8 rounded-lg bg-brand-yellow">
                 <NuxtImg
@@ -19,7 +19,7 @@
                 />
               </div>
             </div>
-            <div class="w-full lg:w-[380px]">
+            <div class="w-full lg:w-[320px] xl:w-[440px]">
               <div class="mb-12">
                 <h2 class="text-2xl lg:text-3xl mb-4">Client</h2>
                 <div class="prose" v-html="renderRichText(blok.client)"></div>

@@ -42,11 +42,11 @@
 
 @layer components {
   .layout-full {
-    @apply px-4 sm:px-8 lg:px-12 xl:px-20;
+    @apply px-4 sm:px-8 lg:px-12 xl:px-16;
   }
 
   .layout-wide {
-    @apply max-w-[1500px] w-full m-auto px-4 sm:px-8 lg:px-12 xl:px-20;
+    @apply max-w-[1480px] w-full m-auto px-4 sm:px-8 lg:px-12 xl:px-16;
   }
 
   .prose {
@@ -114,8 +114,8 @@
 }
 
 .carousel__pagination-button:hover {
-  opacity: 0.64;
   background-color: theme(--color-brand-red);
+  transition: background-color 0.2s ease-in;
 }
 
 .carousel__pagination-button.carousel__pagination-button--active {
@@ -133,6 +133,6 @@
   .carousel__pagination-button {
     height: 8px;
     width: 32px;
-    margin: 0 8px;
+    margin: 0 4px;
   }
 }
