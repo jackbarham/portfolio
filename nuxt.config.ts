@@ -37,7 +37,7 @@ export default defineNuxtConfig({
     ],
   },
   image: {
-    quality: 70,
+    quality: 65,
     format: ['webp'],
     provider: 'storyblok',
     storyblok: {
