@@ -26,10 +26,10 @@
 
       </carousel>
 
-      <button @click="testimonyCarousel.prev()" class="hidden md:block absolute z-10 left-14 xl:left-24 bottom-1/2 translate-y-1/2 w-8 h-8 md:w-12 md:h-12 rounded-full cursor-pointer">
+      <button @click="testimonyCarousel.prev()" class="hidden md:block absolute z-10 left-14 xl:left-24 bottom-1/2 translate-y-1/2 w-8 h-8 md:w-14 md:h-14 rounded-full cursor-pointer">
         <svgo-arrow-left filled class="text-brand-red" />
       </button>
-      <button @click="testimonyCarousel.next()" class="hidden md:block absolute z-10 right-14 xl:right-24 bottom-1/2 translate-y-1/2 w-8 h-8 md:w-12 md:h-12 rounded-full cursor-pointerr">
+      <button @click="testimonyCarousel.next()" class="hidden md:block absolute z-10 right-14 xl:right-24 bottom-1/2 translate-y-1/2 w-8 h-8 md:w-14 md:h-14 rounded-full cursor-pointerr">
         <svgo-arrow-right filled class="text-brand-red" />
       </button>
     </div>

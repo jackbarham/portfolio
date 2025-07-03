@@ -8,6 +8,7 @@
             v-for="brand in brands"
             :key="brand.id"
             :to="brand.url"
+            :aria-label="brand.name"
             class="flex items-center justify-center transition-opacity duration-200 hover:opacity-75"
           >
             <span :class="brandSizes[brand.id]" class="block opacity-95">

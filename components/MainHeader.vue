@@ -17,7 +17,7 @@
         <nav aria-label="Main navigation">
           <ul class="hidden md:flex md:space-x-12 lg:space-x-20 mb-0.5">
             <li v-for="page in pages" :key="page.url">
-              <NuxtLink :to="page.url" class="relative group">
+              <NuxtLink :to="page.url" :aria-label="page.title" class="relative group">
                 <span class="block font-heading font-medium tracking-wide text-base text-white md:text-lg">{{ page.title }}</span>
                 <span class="relative block">
                   <span class="absolute left-0 bottom-0 h-[2px] bg-white w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-in-out origin-left opacity-90"></span>
@@ -55,6 +55,7 @@
           <NuxtLink 
             :to="page.url" 
             @click="closeMobileMenu"
+            :aria-label="page.title"
             class="block text-3xl font-heading font-medium text-white tracking-wide py-3"
           >{{ page.title }}</NuxtLink>
         </li>

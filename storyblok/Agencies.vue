@@ -8,6 +8,7 @@
             v-for="brand in brands"
             :key="brand.id"
             :href="brand.url"
+            :aria-label="brand.name"
             target="_blank"
             class="flex items-center justify-center lg:px-6 transition-opacity duration-200 hover:opacity-75"
           >
