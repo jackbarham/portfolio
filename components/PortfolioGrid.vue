@@ -9,7 +9,7 @@
                 :loading="index === 0 ? 'eager' : 'lazy'"
                 :src="post.content.preview.filename"
                 :alt="post.content.heading"
-                sizes="360 sm:560 md:440 lg:590 xl:460"
+                sizes="340 sm:540 md:420 lg:570 xl:460"
                 format="webp"
                 class="w-full h-full object-cover opacity-100 group-hover:opacity-80 transition-opacity duration-200"
               />
