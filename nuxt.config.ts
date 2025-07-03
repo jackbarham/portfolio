@@ -15,14 +15,12 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/fonts', 
-    '@nuxt/image',
-    'nuxt-svgo',
+    '@nuxt/image', 
+    'nuxt-svgo', 
+    'vue3-carousel-nuxt',
     ['@storyblok/nuxt', {
       accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
-      apiOptions: {
-        region: 'eu',
-      },
-    }]
+    }], 
   ],
   runtimeConfig: {
     public: {
