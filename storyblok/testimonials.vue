@@ -1,6 +1,6 @@
 <template>
   <section v-editable="blok" class="testimonials">
-    <div class="relative bg-brand-yellow pt-16 pb-24">
+    <div class="relative bg-brand-yellow pt-16 pb-24 md:pt-24 md:pb-32 lg:pt-28 lg:pb-36">
 
       <carousel 
         ref="testimonyCarousel" 
@@ -10,8 +10,13 @@
         :mouse-drag="{ threshold: 0.1 }"
       >
         <slide v-for="testimony in blok.testimonials" :key="testimony._uid">
-          <div class="relative z-50 text-center px-8 sm:px-12 lg:px-12 xl:px-20">
-            <p class="text-2xl/9 font-medium">{{ testimony.quote }}</p>
+          <div class="text-center px-8 sm:px-20 md:px-40 lg:max-w-6xl mx-auto">
+            <p class="text-2xl/9 md:text-3xl/10 xl:text-4xl/12 font-medium mb-8">{{ testimony.quote }}</p>
+            <div class="md:flex justify-center items-center text-sm md:text-base font-heading font-medium">
+              <span class="block mr-2 mb-1 md:mb-0">{{ testimony.person }}</span>
+              <span class="hidden md:block mr-2">&dash;</span>
+              <span class="block">{{ testimony.company }}</span>
+            </div>
           </div>
         </slide>
 
@@ -21,10 +26,10 @@
 
       </carousel>
 
-      <button @click="testimonyCarousel.prev()" class="hidden absolute left-12 bottom-12 w-8 h-8 md:w-10 md:h-10 rounded-full cursor-pointer">
+      <button @click="testimonyCarousel.prev()" class="hidden md:block absolute z-50 left-12 xl:left-20 bottom-1/2 translate-y-1/2 w-8 h-8 md:w-12 md:h-12 rounded-full cursor-pointer">
         <svgo-arrow-left filled class="text-brand-red" />
       </button>
-      <button @click="testimonyCarousel.next()" class="hidden absolute right-12 bottom-12 w-8 h-8 md:w-10 md:h-10 rounded-full cursor-pointerr">
+      <button @click="testimonyCarousel.next()" class="hidden md:block absolute z-50 right-12 xl:right-20 bottom-1/2 translate-y-1/2 w-8 h-8 md:w-12 md:h-12 rounded-full cursor-pointerr">
         <svgo-arrow-right filled class="text-brand-red" />
       </button>
     </div>

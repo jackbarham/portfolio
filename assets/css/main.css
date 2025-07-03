@@ -122,21 +122,14 @@
   background-color: theme(--color-brand-red);
 }
 
-@media only screen and (min-width: 1024px) {
-  .carousel__pagination-item {
-    padding: 0 4px;
-  }
-
-  .carousel__pagination-button {
-    padding: 0 10px;
-  }
-
+@media only screen and (min-width: theme(--breakpoint-md)) {
   .carousel__pagination {
-    bottom: -72px;
-  }
-
-  .carousel__pagination-button {
-    height: 24px;
-    width: 16px;
+    bottom: -64px;
   }
 }
+
+/* @media only screen and (min-width: theme(--breakpoint-lg)) {
+  .carousel__pagination {
+    bottom: -80px;
+  }
+} */
