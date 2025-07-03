@@ -46,7 +46,7 @@
   }
 
   .layout-wide {
-    @apply max-w-[1400px] w-full m-auto px-4 sm:px-8 lg:px-12 xl:px-20;
+    @apply max-w-[1500px] w-full m-auto px-4 sm:px-8 lg:px-12 xl:px-20;
   }
 
   .prose {
