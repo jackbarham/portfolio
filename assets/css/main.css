@@ -60,6 +60,10 @@
   .prose p {
     /* @apply !font-medium; */
   }
+
+  .prose b {
+    @apply !font-bold;
+  }
   
   .prose blockquote p:first-of-type::before,
   .prose blockquote p:first-of-type::after {
