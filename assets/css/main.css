@@ -50,7 +50,7 @@
   }
 
   .prose {
-    @apply max-w-none !text-[17px]/6.5 !text-black;
+    @apply max-w-none !text-lg/7 !text-black;
   }
 
   .prose a {
@@ -72,6 +72,10 @@
 
   .prose-article {
     @apply mx-auto !max-w-[720px];
+  }
+
+  .prose-article h1 {
+    @apply !font-black;
   }
 }
 
@@ -114,7 +118,7 @@
   margin: 0 2px;
   background-color: theme(--color-brand-yellow-dark);
   border-radius: 8px;
-  transition: opacity 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .carousel__pagination-button:hover {

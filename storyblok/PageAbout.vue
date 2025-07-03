@@ -2,7 +2,7 @@
   <div v-editable="blok" class="page-about">
     <article class="layout-wide">
       <div class="py-10 md:py-16 lg:py-24">
-        <div class="max-w-2xl lg:max-w-4xl mx-auto mb-12 rounded-xl overflow-hidden">
+        <div class="max-w-2xl lg:max-w-4xl mx-auto mb-16 rounded-xl overflow-hidden">
           <NuxtImg
             :src="blok.image.filename"
             :alt="blok.image.alt"
