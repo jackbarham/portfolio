@@ -11,6 +11,7 @@
   
   --color-brand-red: #f9294a;
   --color-brand-yellow: #ffe267;
+  --color-brand-yellow-dark: #eabd02;
   --color-brand-purple: #5122e1;
   --color-brand-grey-light: #f7f7f7;
   
@@ -82,14 +83,60 @@
   .last\:mb-0:last-child {
     margin-bottom: 0;
   }
-
-  /* .transition-default {
-    @apply transition duration-200 ease-linear;
-  } */
 }
 
 .nuxt-icon {
   height: 100% !important;
   width: 100% !important;
   margin: 0 !important;
+}
+
+/* CAROUSEL - VUE SLIDER */
+
+/* Pagination */
+
+.carousel__slide--active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.carousel__pagination {
+  bottom: -48px;
+}
+
+.carousel__pagination-button {
+  height: 8px;
+  width: 16px;
+  background-color: theme(--color-brand-yellow-dark);
+  border-radius: 8px;
+  transition: opacity 0.2s ease-in;
+}
+
+.carousel__pagination-button:hover {
+  opacity: 0.64;
+  background-color: theme(--color-brand-red);
+}
+
+.carousel__pagination-button.carousel__pagination-button--active {
+  opacity: 1;
+  background-color: theme(--color-brand-red);
+}
+
+@media only screen and (min-width: 1024px) {
+  .carousel__pagination-item {
+    padding: 0 4px;
+  }
+
+  .carousel__pagination-button {
+    padding: 0 10px;
+  }
+
+  .carousel__pagination {
+    bottom: -72px;
+  }
+
+  .carousel__pagination-button {
+    height: 24px;
+    width: 16px;
+  }
 }
