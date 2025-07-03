@@ -106,7 +106,8 @@
 
 .carousel__pagination-button {
   height: 8px;
-  width: 16px;
+  width: 24px;
+  margin: 0 2px;
   background-color: theme(--color-brand-yellow-dark);
   border-radius: 8px;
   transition: opacity 0.2s ease-in;
@@ -128,8 +129,10 @@
   }
 }
 
-/* @media only screen and (min-width: theme(--breakpoint-lg)) {
-  .carousel__pagination {
-    bottom: -80px;
+@media only screen and (min-width: theme(--breakpoint-lg)) {
+  .carousel__pagination-button {
+    height: 8px;
+    width: 32px;
+    margin: 0 8px;
   }
-} */
+}
