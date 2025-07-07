@@ -6,7 +6,7 @@
         <div class="pb-8 md:pb-28">
           <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 lg:gap-10 xl:gap-14">
             <div class="w-full">
-              <div v-for="(item, index) in blok.gallery" :key="item._uid" class="mb-4 p-4 pb-0 sm:p-8 sm:pb-0 lg:mb-8 rounded-lg bg-brand-yellow">
+              <div v-for="(item, index) in blok.gallery" :key="item._uid" class="mb-4 rounded-lg overflow-hidden">
                 <NuxtImg
                   :loading="index === 0 ? 'eager' : 'lazy'"
                   :width="imageWidth(item.image.filename)"
@@ -15,7 +15,7 @@
                   :alt="item.image.alt"
                   sizes="340 sm:550 md:620 lg:680 xl:800"
                   format="webp"
-                  class="mx-auto rounded rounded-b-none"
+                  class=""
                 />
               </div>
             </div>
