@@ -15,7 +15,7 @@
                   :alt="item.image.alt"
                   sizes="340 sm:550 md:620 lg:680 xl:800"
                   format="webp"
-                  class=""
+                  class="w-full"
                 />
               </div>
             </div>
