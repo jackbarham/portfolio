@@ -8,7 +8,7 @@
             :height="imageHeight(blok.image.filename)"
             :src="blok.image.filename"
             :alt="blok.image.alt"
-            sizes="360 sm:620 md:760 lg:900 xl:1200"
+            sizes="260 sm:420 md:560 lg:500 xl:700"
             format="webp"
             class="w-full"
           />
