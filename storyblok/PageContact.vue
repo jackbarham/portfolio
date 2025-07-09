@@ -5,7 +5,7 @@
         <div class="prose prose-article">
           <h1>{{ blok.heading }}</h1>
           <article class="" v-html="renderRichText(blok.copy)"></article>
-          <a class="font-family-heading font-bold text-2xl" href="mailto:jack@airboxmedia.com">{{ blok.email }}</a>
+          <a class="font-family-heading font-bold text-xl" href="mailto:jack@airboxmedia.com">{{ blok.email }}</a>
         </div>
       </div>
     </article>
