@@ -27,7 +27,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: theme(--font-family-heading);
-    @apply font-extrabold;
+    @apply font-bold;
   }
 
   .font-heading {
@@ -74,8 +74,17 @@
     @apply mx-auto !max-w-[680px];
   }
 
+  .prose-article h1, 
+  .prose-article h2, 
+  .prose-article h3, 
+  .prose-article h4,
+  .prose-article h5, 
+  .prose-article h6 {
+    @apply !mb-4;
+  }
+
   .prose-article h1 {
-    @apply !font-black;
+    @apply !text-3xl;
   }
 }
 
