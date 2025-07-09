@@ -1,13 +1,13 @@
 <template>
   <section class="navigation-bar">
     <div class="bg-brand-red max-w-2xl mx-auto rounded-full px-4 sm:px-8">
-      <div class="grid grid-cols-3 items-center h-14">
+      <div class="grid grid-cols-3 items-center">
         <!-- Left: Recent Post -->
         <div class="flex justify-start">
           <NuxtLink
             v-if="nextPost"
             :to="`/${nextPost.full_slug}`"
-            class="flex items-center text-white group"
+            class="flex items-center text-white h-12 md:h-14 group"
           >
             <span class="inline-block h-6 w-6 mr-2 transition-transform duration-300 group-hover:-translate-x-1">
               <svgo-arrow-left filled class="text-white" />
@@ -42,7 +42,7 @@
           <NuxtLink
             v-if="previousPost"
             :to="`/${previousPost.full_slug}`"
-            class="flex items-center text-white text-right h-14 group"
+            class="flex items-center text-white text-right h-12 md:h-14 group"
           >
             <div class="flex flex-col">
               <span class="font-medium opacity-100">Previous</span>
