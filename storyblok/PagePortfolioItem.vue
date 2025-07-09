@@ -24,7 +24,7 @@
                 <h2 class="text-2xl lg:text-3xl mb-4">Client</h2>
                 <div class="prose" v-html="renderRichText(blok.client)"></div>
               </div>
-              <div class="mb-12">
+              <div class="mb-8">
                 <h2 class="text-2xl lg:text-3xl mb-4">Scope</h2>
                 <div class="prose mb-8" v-html="renderRichText(blok.scope)"></div>
                 <ul class="">
@@ -35,7 +35,7 @@
               </div>
             </div>
           </div>
-      </div>
+        </div>
       </div>
     </article>
   </div>
