@@ -54,7 +54,7 @@
   }
 
   .prose a {
-    @apply !font-normal !text-brand-red border-b-2 border-transparent transition-colors hover:border-brand-red/75 !no-underline;
+    @apply font-normal !text-brand-red border-b-2 border-transparent transition-colors hover:border-brand-red/75 !no-underline;
   }
 
   .prose p {
