@@ -71,7 +71,7 @@
   }
 
   .prose-article {
-    @apply mx-auto !max-w-[720px];
+    @apply mx-auto !max-w-[680px];
   }
 
   .prose-article h1 {
