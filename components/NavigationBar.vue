@@ -1,7 +1,7 @@
 <template>
   <section class="navigation-bar">
-    <div class="bg-brand-red layout-full">
-      <div class="grid grid-cols-3 items-center h-14 md:h-16">
+    <div class="bg-brand-red max-w-2xl mx-auto rounded-full px-4 sm:px-8">
+      <div class="grid grid-cols-3 items-center h-14">
         <!-- Left: Recent Post -->
         <div class="flex justify-start">
           <NuxtLink
@@ -14,15 +14,26 @@
             </span>
             <div class="flex flex-col">
               <span class="font-medium opacity-100">Recent</span>
-              <!-- <span class="hidden md:block text-sm font-medium">{{ nextPost.content.heading }}</span> -->
             </div>
           </NuxtLink>
+          <!-- Disabled state when no next post -->
+          <div
+            v-else
+            class="flex items-center text-white opacity-50 cursor-not-allowed"
+          >
+            <span class="inline-block h-6 w-6 mr-2">
+              <svgo-arrow-left filled class="text-white" />
+            </span>
+            <div class="flex flex-col">
+              <span class="font-medium">Recent</span>
+            </div>
+          </div>
         </div>
 
         <!-- Center: Counter -->
         <div class="flex items-center justify-center">
           <span class="font-semibold text-white">
-            {{ currentIndex + 1 }} / {{ posts.length }}
+            {{ posts.length - currentIndex }} / {{ posts.length }}
           </span>
         </div>
 
@@ -31,16 +42,27 @@
           <NuxtLink
             v-if="previousPost"
             :to="`/${previousPost.full_slug}`"
-            class="flex items-center text-white text-right group"
+            class="flex items-center text-white text-right h-14 group"
           >
             <div class="flex flex-col">
               <span class="font-medium opacity-100">Previous</span>
-              <!-- <span class="hidden md:block text-sm font-medium">{{ previousPost.content.heading }}</span> -->
             </div>
             <span class="inline-block h-6 w-6 ml-2 transition-transform duration-300 group-hover:translate-x-1">
               <svgo-arrow-right filled class="text-white" />
             </span>
           </NuxtLink>
+          <!-- Disabled state when no previous post -->
+          <div
+            v-else
+            class="flex items-center text-white opacity-50 cursor-not-allowed text-right"
+          >
+            <div class="flex flex-col">
+              <span class="font-medium">Previous</span>
+            </div>
+            <span class="inline-block h-6 w-6 ml-2">
+              <svgo-arrow-right filled class="text-white" />
+            </span>
+          </div>
         </div>
       </div>
     </div>
