@@ -21,7 +21,7 @@
           <NavigationBar 
             v-if="isPortfolioItem"
             :current-slug="$route.path.replace('/', '')" 
-            class="sticky bottom-4 left-0 right-0 z-50 mx-8"
+            class="sticky bottom-4 left-0 right-0 z-30 mx-8"
           />
         </Transition>
       </div>
