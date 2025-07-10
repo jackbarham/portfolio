@@ -28,32 +28,32 @@ const brands = [
   {
     id: 'gsk',
     name: 'GSK',
-    url: 'https://www.gsk.com',
+    url: '/portfolio/gsk-data',
   },
   {
     id: 'netflix',
     name: 'Netflix',
-    url: 'https://www.netflix.com',
+    url: '/portfolio/scoops-ahoy',
   },
   {
     id: 'virgin',
     name: 'Virgin',
-    url: 'https://www.virgin.com',
+    url: '/portfolio/virgin-care-private',
   },
   {
     id: 'mcdonalds',
     name: 'McDonald\'s',
-    url: 'https://www.mcdonalds.com',
+    url: '/portfolio/mcdonalds-monopoly',
   },
   {
     id: 'belmond',
     name: 'Belmond',
-    url: 'https://www.belmond.com',
+    url: '/portfolio/belmond',
   },
   {
     id: 'toyota',
     name: 'Toyota',
-    url: 'https://www.toyota.com',
+    url: '/portfolio/toyota-gt86',
   }
 ]
 
