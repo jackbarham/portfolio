@@ -80,7 +80,7 @@
   .prose-article h4,
   .prose-article h5, 
   .prose-article h6 {
-    @apply !mb-4;
+    @apply !mb-6;
   }
 
   .prose-article h1 {
