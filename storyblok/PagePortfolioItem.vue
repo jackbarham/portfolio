@@ -6,6 +6,11 @@
         <div class="pb-4 md:pb-0">
           <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 lg:gap-10 xl:gap-14">
             <div class="w-full">
+              <div v-if="blok.video" class="mb-4 lg:mb-8 bg-gray-100 rounded-lg overflow-hidden">
+                <div class="aspect-video">
+                  <iframe :src="`https://player.vimeo.com/video/1020514679?autoplay=1&loop=1`" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+              </div>
               <div v-for="(item, index) in blok.gallery" :key="item._uid" class="mb-4 lg:mb-8 bg-gray-100 rounded-lg overflow-hidden">
                 <NuxtImg
                   :loading="index === 0 ? 'eager' : 'lazy'"
