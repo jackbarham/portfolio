@@ -8,12 +8,13 @@
         :wrap-around="true" 
         :touch-drag="{ threshold: 0.1 }"
         :mouse-drag="{ threshold: 0.1 }"
+        :transition="500"
       >
         <slide v-for="testimony in blok.testimonials" :key="testimony._uid">
           <div class="text-center px-8 sm:px-20 md:px-40 lg:max-w-6xl mx-auto">
             <p class="text-2xl/9 md:text-3xl/10 xl:text-4xl/12 font-medium mb-8">{{ testimony.quote }}</p>
             <div class="md:flex justify-center items-center text-sm md:text-base font-heading font-medium">
-              <span class="block mr-2 mb-1 md:mb-0">{{ testimony.person }}</span>
+              <span class="block mb-1 md:mr-2 md:mb-0">{{ testimony.person }}</span>
               <span class="hidden md:block mr-2">&dash;</span>
               <span class="block">{{ testimony.company }}</span>
             </div>

@@ -7,7 +7,7 @@
           <div class="prose prose-article">      
             <article class="" v-html="renderRichText(blok.copy)"></article>
             <a 
-              class="text-lg font-semibold inline-flex justify-center items-center gap-2 mt-8 border border-brand-red hover:bg-brand-red h-14 px-12 rounded-full group" 
+              class="text-lg font-semibold inline-flex justify-center items-center gap-2 mt-6 border border-brand-red hover:bg-brand-red h-14 px-12 rounded-full group" 
               href="mailto:jack@airboxmedia.com"
             >
               <span class="text-brand-red group-hover:text-white">{{ blok.email }}</span>
