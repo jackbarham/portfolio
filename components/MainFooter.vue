@@ -4,7 +4,7 @@
       <div class="lg:flex justify-between items-center md:flex-row-reverse layout-full">
         <ul class="flex justify-center lg:justify-normal lg:mr-0 mb-12 lg:mb-0">
           <li v-for="social in socials" :key="social.id" class="px-2 md:p-0 md:ml-4">
-            <NuxtLink :to="social.url" target="_blank" class="block bg-gray-100 hover:bg-brand-red p-4 rounded-full" :aria-label="`${appTitle} on ${social.name}`">
+            <NuxtLink :to="social.url" target="_blank" class="block bg-gray-100 hover:bg-brand-red p-4 rounded" :aria-label="`${appTitle} on ${social.name}`">
               <span class="block h-8 w-8 md:h-9 md:w-9">
                 <component :is="icons[social.id]" filled class="text-black" />
               </span>
@@ -30,20 +30,20 @@ const year = new Date().getFullYear()
 
 const socials = [
   {
-    id: 'x',
-    name: 'X / Twitter',
-    url: 'https://x.com/JackBarham',
+    id: 'linkedin',
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/jack-barham-ba526513',
   },
-  {
+    {
     id: 'youtube',
     name: 'YouTube',
     url: 'https://www.youtube.com/@jackbarham',
   },
   {
-    id: 'linkedin',
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/jack-barham-ba526513',
-  },
+    id: 'x',
+    name: 'X / Twitter',
+    url: 'https://x.com/JackBarham',
+  },  
   {
     id: 'producthunt',
     name: 'Product Hunt',
