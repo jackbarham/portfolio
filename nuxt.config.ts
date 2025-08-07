@@ -32,8 +32,18 @@ export default defineNuxtConfig({
       id: ['wby8sop'],
     },
     families: [
-      { name: '"Transducer Variable"', weights: [400, 500, 700, 900], styles: ['normal'] },
-      // { name: '"Articulat CF"', weights: [400, 800], styles: ['normal', 'italic'] },
+      { 
+        name: '"Transducer Variable"', 
+        weights: [400, 500, 700, 900], 
+        styles: ['normal'] 
+      },
+      {
+        name: 'Inter',
+        provider: 'google',
+        weights: ['300', '400', '500', '600', '700'],
+        subsets: ['latin'],
+        display: 'swap'
+      },
     ],
   },
   image: {
