@@ -25,7 +25,7 @@
               </NuxtLink>
             </li>
             <li>
-              <a href="mailto:jack@airboxmedia.com" class="inline-flex items-center bg-white hover:bg-white/85 group h-10 px-4 rounded transition-colors duration-300">
+              <a href="mailto:jack@airboxmedia.com" class="inline-flex items-center bg-white hover:bg-white/80 group h-10 px-4 rounded transition-colors duration-300">
                 <span class="inline-block h-6 w-6 mr-2">
                   <svgo-email filled class="text-brand-purple" />
                 </span>
