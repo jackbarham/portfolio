@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     :to="url"
-    class="text-xl text-brand-red-dark font-medium inline-flex items-center group"
+    class="text-[22px] text-brand-red-dark font-medium inline-flex items-center group"
   >
     <span class="inline-block">{{ text }}</span>
     <span class="inline-block h-10 w-10 ml-0.5 mt-[1px] transition-transform duration-200 group-hover:translate-x-1">
