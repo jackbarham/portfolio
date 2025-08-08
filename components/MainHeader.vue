@@ -25,11 +25,11 @@
               </NuxtLink>
             </li>
             <li>
-              <a href="mailto:jack@airboxmedia.com" class="inline-flex items-center bg-white h-10 px-4 rounded">
+              <a href="mailto:jack@airboxmedia.com" class="inline-flex items-center bg-white hover:bg-brand-purple group h-10 px-4 rounded transition-colors duration-300">
                 <span class="inline-block h-6 w-6 mr-2">
-                  <svgo-email filled class="text-brand-purple" />
+                  <svgo-email filled class="text-brand-purple group-hover:text-white" />
                 </span>
-                <span class="block font-heading font-medium tracking-wide text-base text-brand-purple md:text-lg">Contact</span>
+                <span class="block font-heading font-medium tracking-wide text-base text-brand-purple group-hover:text-white md:text-lg">Contact</span>
               </a>
             </li>
           </ul>

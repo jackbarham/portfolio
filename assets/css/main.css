@@ -38,6 +38,10 @@
   button {
     @apply hover:cursor-pointer;
   }
+
+  /* a {
+    @apply transition-colors;
+  } */
 }
 
 @layer components {
