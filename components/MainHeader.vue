@@ -79,7 +79,7 @@
         }"
       >
         <a href="mailto:jack@airboxmedia.com" class="">
-          <span class="inline-block text-white/70 mb-2">Send a message</span>
+          <span class="inline-block text-white/70 mb-2">Let's discuss your project</span>
           <span class="block text-xl font-heading font-medium tracking-wide text-white md:text-lg">jack@airboxmedia.com</span>
         </a>
       </div>
