@@ -2,7 +2,7 @@
   <div v-editable="blok" class="page-about">
     <article class="layout-wide">
       <div class="py-10 md:py-16 lg:py-20">
-        <div class="max-w-2xl md:max-w-4xl mx-auto bg-gray-100 mb-10 md:mb-16 rounded md:rounded-xl overflow-hidden">
+        <div class="max-w-2xl md:max-w-4xl mx-auto bg-gray-100 mb-10 md:mb-16 rounded-xl overflow-hidden">
           <NuxtImg
             :width="imageWidth(blok.image.filename)"
             :height="imageHeight(blok.image.filename)"
@@ -16,6 +16,7 @@
         <article class="prose prose-article" v-html="renderRichText(blok.article)"></article>
       </div>
     </article>
+    <ContactBlock :content="blok" />  
   </div>
 </template>
  

@@ -56,10 +56,12 @@
 
   .prose {
     @apply max-w-none !text-lg/7 !text-black;
+    --prose-link-color: theme(--color-brand-red-dark);
   }
 
   .prose a {
-    @apply font-normal !text-brand-red border-b-2 border-transparent transition-colors hover:border-brand-red/75 !no-underline;
+    @apply font-normal border-b-2 border-transparent transition-colors hover:border-brand-red/75 !no-underline;
+    color: var(--prose-link-color) !important;
   }
 
   .prose p {
@@ -104,6 +106,15 @@
   
   .last\:mb-0:last-child {
     margin-bottom: 0;
+  }
+
+  /* Utility to override prose link colors */
+  .prose-links-white {
+    --prose-link-color: white;
+  }
+
+  .prose-links-red {
+    --prose-link-color: theme(--color-brand-red);
   }
 }
 
