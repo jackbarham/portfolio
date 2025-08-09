@@ -61,7 +61,7 @@
   }
 
   .prose a {
-    @apply font-normal border-b-2 border-transparent transition-colors hover:border-brand-red/75 !no-underline;
+    @apply font-normal border-b-2 border-transparent transition-colors hover:border-brand-red-dark/85 !no-underline;
     color: var(--prose-link-color) !important;
   }
 
