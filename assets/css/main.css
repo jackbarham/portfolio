@@ -17,7 +17,8 @@
   --color-brand-grey-light: #f7f7f7;
   
   --font-family-heading: "Transducer Variable", system-ui, sans-serif;
-  --font-family-body: system-ui, sans-serif;
+  --font-family-body: "inter", system-ui, sans-serif;
+  /* --font-family-body: system-ui, sans-serif; */
 }
 
 @layer base {
