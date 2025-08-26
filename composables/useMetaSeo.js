@@ -5,9 +5,6 @@ export function useMetaSeo(story) {
   const defaultSiteName = 'Jack Barham'
 
   const getTitle = () => {
-    console.log('Current route path:', route.path)
-    console.log('Is portfolio path?', route.path.startsWith('/portfolio/'))
-    
     if (route.path === '/') {
       return defaultSiteName
     }

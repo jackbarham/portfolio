@@ -82,6 +82,10 @@
     @apply mx-auto !max-w-[680px];
   }
 
+  .prose-article li p {
+    @apply !my-1.5;
+  }
+
   .prose-article h1, 
   .prose-article h2, 
   .prose-article h3, 
