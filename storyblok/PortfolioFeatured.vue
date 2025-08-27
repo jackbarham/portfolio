@@ -18,7 +18,7 @@
             v-if="blok.cta_link"
             :url="blok.cta_link"
             :text="blok.cta_text"
-            class="visible md:invisible mt-8"
+            class="visible md:hidden mt-8"
           />
         </div>
         
