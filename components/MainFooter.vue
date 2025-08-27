@@ -32,7 +32,7 @@ const socials = [
   {
     id: 'linkedin',
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/jack-barham-ba526513',
+    url: 'https://www.linkedin.com/in/jackbarham',
   },
     {
     id: 'youtube',
