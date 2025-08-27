@@ -1,6 +1,6 @@
 export function useMetaSeo(story) {
   const route = useRoute()
-  const defaultImage = 'https://a.storyblok.com/f/299693/3840x2160/7e4435e881/jackbarham.png'
+  const defaultImage = 'https://a.storyblok.com/f/299693/1200x675/70ba555f3e/social-card-jackbarham.jpg'
   const defaultDescription = 'Web development, interface design and digital consultancy.'
   const defaultSiteName = 'Jack Barham'
 
