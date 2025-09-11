@@ -2,17 +2,17 @@
   <section v-editable="blok" class="agencies">
     <div class="py-18 md:py-22 lg:py-36">
       <HeadingMini :text="blok.heading" />
-      <div class="max-w-xs sm:max-w-md lg:max-w-7xl layout-full mx-auto">
-        <div class="grid grid-cols-2 lg:grid-cols-6 gap-x-14 gap-y-12 sm:gap-12 md:gap-16 lg:gap-4 items-center justify-center">
+      <div class="lg:max-w-7xl layout-full mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 items-center justify-center">
           <a
             v-for="brand in brands"
             :key="brand.id"
             :href="brand.url"
             :aria-label="brand.name"
             target="_blank"
-            class="flex items-center justify-center lg:px-6 transition-opacity duration-200 hover:opacity-75"
+            class="flex items-center justify-center transition-opacity duration-200 border border-gray-200 hover:border-brand-red rounded-lg px-10 py-8 md:px-14 md:py-12"
           >
-            <span class="block opacity-95">
+            <span class="block w-24 md:w-36 h-12">
               <component :is="icons[brand.id]" filled class="text-black w-full h-full" />
             </span>
           </a>
@@ -54,7 +54,7 @@ const brands = [
   {
     id: 'foolproof',
     name: 'foolproof',
-    url: 'https://www.foolproof.com',
+    url: 'https://www.foolproof.co.uk',
   }
 ]
 
