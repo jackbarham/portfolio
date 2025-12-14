@@ -34,7 +34,7 @@ const brands = [
   {
     id: 'mcsaatchi',
     name: 'M&C Saatchi',
-    url: 'https://www.mccsaatchi.com',
+    url: 'https://www.mcsaatchi.com',
   },
   {
     id: 'mof',

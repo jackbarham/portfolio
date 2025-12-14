@@ -71,7 +71,7 @@
 
       <!-- CTA button -->
       <div 
-        class="absolute bottom-12 min-w-48 transform transition-opacity duration-[700ms] ease-in-out"
+        class="absolute bottom-12 min-w-48 transform transition-opacity duration-700 ease-in-out"
         :class="menuOpen ? 'opacity-100' : 'opacity-0'"
         :style="{ 
           transitionDelay: menuOpen ? '200ms' : '0ms',
